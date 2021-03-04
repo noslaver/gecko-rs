@@ -1,0 +1,65 @@
+# This file contains a table of all supported EFR32 microcontrollers.
+#
+# It lists them by family (which corresponds to a crate),
+# then by the "device" in that family (corresponds to an SVD file,
+# and to a module within each crate).
+#
+# For each device, there is a link to the product page and reference manual,
+# the reference manual ID, the title from the reference manual,
+# and a list of actual members of this family (without size/package codes).
+#
+# This data is used to generate more informative crate READMEs.
+
+
+efr32xg1p:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG1 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg1-rm.pdf
+  members:
+    - EFR32BG1P
+    - EFR32FG1P
+    - EFR32MG1P
+
+efr32xg12p:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG12 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg12-rm.pdf
+  members:
+    - EFR32BG12P
+    - EFR32FG12P
+    - EFR32MG12P
+
+efr32xg13p:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG13 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg13-rm.pdf
+  members:
+    - EFR32BG13P
+    - EFR32FG13P
+    - EFR32MG13P
+
+efr32xg14p:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG14 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg14-rm.pdf
+  members:
+    - EFR32BG14P
+    - EFR32FG14P
+    - EFR32MG14P
+
+efr32xg21:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG21 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg21-rm.pdf
+  members:
+    - EFR32BG21P
+    - EFR32MG21P
+
+efr32xg22:
+  url: https://www.silabs.com/products/wireless/wireless-gecko-iot-connectivity-portfolio
+  rm_title: EFR32xG22 Wireless Gecko
+  rm_url: https://www.silabs.com/documents/public/reference-manuals/efr32xg22-rm.pdf
+  members:
+    - EFR32BG22P
+    - EFR32FG22P
+    - EFR32MG22P

@@ -1,0 +1,21 @@
+MODEM_S,MODEM_NS:
+  PRSCTRL:
+    _modify:
+      POSTPONESEL:
+        description: "No description"
+      ADVANCESEL:
+        description: "No description"
+      NEWWNDSEL:
+        description: "No description"
+      WEAKSEL:
+        description: "No description"
+      SYNCSENTSEL:
+        description: "No description"
+      PRESENTSEL:
+        description: "No description"
+      LOWCORRSEL:
+        description: "No description"
+      ANT0SEL:
+        description: "No description"
+      ANT1SEL:
+        description: "No description"

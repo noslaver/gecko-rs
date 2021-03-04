@@ -1,0 +1,5 @@
+RFCRC_S,RFCRC_NS:
+  CTRL:
+    _modify:
+      CRCWIDTH:
+        description: "CRC width"

@@ -1,0 +1,129 @@
+DEVINFO:
+  EXTINFO:
+    TYPE:
+      _replace_enum:
+        NONE: [0, "None"]
+
+  HFRCODPLLCAL*,HFRCOEM23CAL*:
+    _modify:
+      TUNING:
+        description: "Tuning"
+      FINETUNING:
+        description: "Fine-Tuning"
+      LDOHP:
+        description: "LDOHP"
+      FREQRANGE:
+        description: "FREQRANGE"
+      CMPBIAS:
+        description: "CMPBIAS"
+      CLKDIV:
+        description: "CLKDIV"
+      CMPSEL:
+        description: "CMPSEL"
+      IREFTC:
+        description: "IREFTC"
+
+  MODULENAME0:
+    _modify:
+      MODCHAR1:
+        description: "Module character no. 1"
+      MODCHAR2:
+        description: "Module character no. 2"
+      MODCHAR3:
+        description: "Module character no. 3"
+      MODCHAR4:
+        description: "Module character no. 4"
+  MODULENAME1:
+    _modify:
+      MODCHAR5:
+        description: "Module character no. 5"
+      MODCHAR6:
+        description: "Module character no. 6"
+      MODCHAR7:
+        description: "Module character no. 7"
+      MODCHAR8:
+        description: "Module character no. 8"
+  MODULENAME2:
+    _modify:
+      MODCHAR9:
+        description: "Module character no. 9"
+      MODCHAR10:
+        description: "Module character no. 10"
+      MODCHAR11:
+        description: "Module character no. 11"
+      MODCHAR12:
+        description: "Module character no. 12"
+  MODULENAME3:
+    _modify:
+      MODCHAR13:
+        description: "Module character no. 13"
+      MODCHAR14:
+        description: "Module character no. 14"
+      MODCHAR15:
+        description: "Module character no. 15"
+      MODCHAR16:
+        description: "Module character no. 16"
+  MODULENAME4:
+    _modify:
+      MODCHAR17:
+        description: "Module character no. 17"
+      MODCHAR18:
+        description: "Module character no. 18"
+      MODCHAR19:
+        description: "Module character no. 19"
+      MODCHAR20:
+        description: "Module character no. 20"
+  MODULENAME5:
+    _modify:
+      MODCHAR21:
+        description: "Module character no. 21"
+      MODCHAR22:
+        description: "Module character no. 22"
+      MODCHAR23:
+        description: "Module character no. 23"
+      MODCHAR24:
+        description: "Module character no. 24"
+  MODULENAME6:
+    _modify:
+      MODCHAR25:
+        description: "Module character no. 25"
+      MODCHAR26:
+        description: "Module character no. 26"
+      RSV:
+        description: "Reserved for null character"
+  _delete: 
+    - MODULEINFO
+    - MODXOCAL
+    - IADC0GAIN0
+    - IADC0GAIN1
+    - IADC0OFFSETCAL0
+    - IADC0OFFSETCAL1
+    - IADC0NORMALOFFSETCAL0
+    - IADC0NORMALOFFSETCAL1
+    - IADC0HISPDOFFSETCAL0
+    - IADC0HISPDOFFSETCAL1
+
+    - RTHERM
+      #_modify:
+      #  HWREV:
+      #    description: "Hardware revision"
+      #  ANTENNA:
+      #    description: "Antenna information"
+      #  MODNUMBER:
+      #    description: "Module number"
+      #  TYPE:
+      #    description: "Module type"
+      #  LFXO:
+      #    description: "LFXO installation status"
+      #  EXPRESS:
+      #    description: "Express support"
+      #  LFXOCALVAL:
+      #    description: "Validation status of LFXO tuning"
+      #  HFXOCALVAL:
+      #    description: "Validation status of HFXO tuning"
+      #  MODNUMBERMSB:
+      #    description: "MSB module number"
+      #  PADCDC:
+      #    description: "PA voltage"
+      #  PHYLIMITED:
+      #    description: "Phy limited"

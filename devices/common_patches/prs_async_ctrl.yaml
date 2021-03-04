@@ -1,0 +1,8 @@
+# Add description to ASYNC_CH*_CTRL.SIGSEL.NONE value
+
+PRS_S,PRS_NS:
+  "ASYNC_CH*_CTRL":
+    SIGSEL:
+      _replace_enum:
+        NONE: [0, "No action"]
+

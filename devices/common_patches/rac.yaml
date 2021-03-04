@@ -1,0 +1,95 @@
+RAC_S,RAC_NS:
+  SYNTHENCTRL:
+    VCOSTARTUP:
+      _replace_enum:
+        fast_start_up_0: [0, "No description"]
+        fast_start_up_1: [1, "No description"]
+
+    VCBUFEN:
+      _replace_enum:
+        Disabled: [0, "No description"]
+        Enabled: [1, "No description"]
+
+  SYNTHREGCTRL:
+    MMDLDOVREFTRIM,CHPLDOVREFTRIM:
+      _replace_enum:
+        vref0p6000: [0, "No description"]
+        vref0p6125: [1, "No description"]
+        vref0p6250: [2, "No description"]
+        vref0p6375: [3, "No description"]
+        vref0p6500: [4, "No description"]
+        vref0p6625: [5, "No description"]
+        vref0p6750: [6, "No description"]
+        vref0p6875: [7, "No description"]
+
+  SYNTHCTRL:
+    MMDPOWERBALANCEDISABLE:
+      _replace_enum:
+        EnablePowerbleed: [0, "No description"]
+        DisablePowerbleed: [1, "No description"]
+        #  APC:
+        #    ENAPCSW:
+        #      _replace_enum:
+        #        DISABLE: [0, "No description"]
+        #        ENABLE: [1, "No description"]
+
+RAC_S,RAC_NS:
+  _delete:
+    SYNTHENCTRL:
+      - VCOSTARTUP
+    SYNTHREGCTRL:
+      - MMDLDOVREFTRIM
+      - CHPLDOVREFTRIM
+    SYNTHCTRL:
+      - MMDPOWERBALANCEDISABLE
+    APC:
+      - ENAPCSW
+    AUXADCTRIM:
+    AUXADCEN:
+    AUXADCCTRL1:
+    CLKMULTEN0:
+    CLKMULTEN1:
+    CLKMULTCTRL:
+    CLKMULTSTATUS:
+    IFADCTRIM:
+    IFADCCAL:
+    IFADCSTATUS:
+    LNAMIXTRIM0:
+    LNAMIXTRIM1:
+    LNAMIXTRIM2:
+    LNAMIXCAL:
+    LNAMIXEN:
+    PRECTRL:
+    PATRIM0:
+    PATRIM1:
+    PATRIM2:
+    PACTRL:
+    PGATRIM:
+    PGACAL:
+    PGACTRL:
+    RFBIASCAL:
+    RFBIASCTRL:
+    RADIOEN:
+    RFPATHEN1:
+    RFPATHEN2:
+    RX:
+    TX:
+    SYTRIM0:
+    SYTRIM1:
+    SYCAL:
+    SYEN:
+    CALCFG:
+    SYLOEN:
+    SYMMDCTRL:
+    DIGCLKRETIMECTRL:
+    DIGCLKRETIMESTATUS:
+    XORETIMESTATUS:
+    XORETIMECTRL:
+    XOSQBUFFILT:
+
+    EM1PCSR:
+    IFADCTRIM0:
+    IFADCTRIM1:
+    PATRIM3:
+    RFPATHEN:
+    THMSW:

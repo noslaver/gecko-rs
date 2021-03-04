@@ -1,0 +1,4 @@
+_svd: ../svd/efr32xg12p.svd
+
+_modify:
+  name: efr32xg12p

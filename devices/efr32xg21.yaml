@@ -1,0 +1,187 @@
+_svd: ../svd/efr32xg21.svd
+
+_modify:
+  name: efr32xg21
+
+CMU_S,CMU_NS:
+  STATUS:
+    WDOGLOCK:
+      _replace_enum:
+        UNLOCKED: [0, "WDOGCLKCTRL register is unlocked."]
+        LOCKED: [1, "WDOGCLKCTRL register is locked."]
+    LOCK:
+      _replace_enum:
+        UNLOCKED: [0, "ALL CMU lockable registers are unlocked."]
+        LOCKED: [1, "All CMU lockable registers are locked."]
+
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [37879, "Unlock code"]
+
+  WDOGLOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [21079, "Unlock code"]
+
+
+HFXO0_S,HFXO0_NS:
+  XTALCFG:
+    TIMEOUTSTEADY:
+      _replace_enum:
+        T16US: [0, "The steady state timeout is set to 16 us minimum.  The maximum can be +40%."]
+        T41US: [1, "The steady state timeout is set to 41 us minimum.  The maximum can be +40%."]
+        T83US: [2, "The steady state timeout is set to 83 us minimum.  The maximum can be +40%."]
+        T125US: [3, "The steady state timeout is set to 125 us minimum.  The maximum can be +40%."]
+        T166US: [4, "The steady state timeout is set to 166 us minimum.  The maximum can be +40%."]
+        T208US: [5, "The steady state timeout is set to 208 us minimum.  The maximum can be +40%."]
+        T250US: [6, "The steady state timeout is set to 250 us minimum.  The maximum can be +40%."]
+        T333US: [7, "The steady state timeout is set to 333 us minimum.  The maximum can be +40%."]
+        T416US: [8, "The steady state timeout is set to 416 us minimum.  The maximum can be +40%."]
+        T500US: [9, "The steady state timeout is set to 500 us minimum.  The maximum can be +40%."]
+        T666US: [10, "The steady state timeout is set to 666 us minimum.  The maximum can be +40%."]
+        T833US: [11, "The steady state timeout is set to 833 us minimum.  The maximum can be +40%."]
+        T1666US: [12, "The steady state timeout is set to 1666 us minimum.  The maximum can be +40%."]
+        T2500US: [13, "The steady state timeout is set to 2500 us minimum.  The maximum can be +40%."]
+        T4166US: [14, "The steady state timeout is set to 4166 us minimum.  The maximum can be +40%."]
+        T7500US: [15, "The steady state timeout is set to 7500 us minimum.  The maximum can be +40%."]
+    TIMEOUTCBLSB:
+      _replace_enum:
+        T8US: [0, "The core bias LSB change timeout is set to 8 us minimum.  The maximum can be +40%."]
+        T20US: [1, "The core bias LSB change timeout is set to 20 us minimum.  The maximum can be +40%."]
+        T41US: [2, "The core bias LSB change timeout is set to 41 us minimum.  The maximum can be +40%."]
+        T62US: [3, "The core bias LSB change timeout is set to 62 us minimum.  The maximum can be +40%."]
+        T83US: [4, "The core bias LSB change timeout is set to 83 us minimum.  The maximum can be +40%."]
+        T104US: [5, "The core bias LSB change timeout is set to 104 us minimum.  The maximum can be +40%."]
+        T125US: [6, "The core bias LSB change timeout is set to 125 us minimum.  The maximum can be +40%."]
+        T166US: [7, "The core bias LSB change timeout is set to 166 us minimum.  The maximum can be +40%."]
+        T208US: [8, "The core bias LSB change timeout is set to 208 us minimum.  The maximum can be +40%."]
+        T250US: [9, "The core bias LSB change timeout is set to 250 us minimum.  The maximum can be +40%."]
+        T333US: [10, "The core bias LSB change timeout is set to 333 us minimum.  The maximum can be +40%."]
+        T416US: [11, "The core bias LSB change timeout is set to 416 us minimum.  The maximum can be +40%."]
+        T833US: [12, "The core bias LSB change timeout is set to 833 us minimum.  The maximum can be +40%."]
+        T1250US: [13, "The core bias LSB change timeout is set to 1250 us minimum.  The maximum can be +40%."]
+        T2083US: [14, "The core bias LSB change timeout is set to 2083 us minimum.  The maximum can be +40%."]
+        T3750US: [15, "The core bias LSB change timeout is set to 3750 us minimum.  The maximum can be +40%."]
+
+  XTALCTRL:
+    CTUNEFIXANA:
+      _replace_enum:
+        NONE: [0, "Remove fixed capacitance on XI and XO nodes"]
+        XI: [1, "Adds fixed capacitance on XI node"]
+        XO: [2, "Adds fixed capacitance on XO node"]
+        BOTH: [3, "Adds fixed capacitance on both XI and XO nodes"]
+    COREDGENANA:
+      _replace_enum:
+        NONE: [0, "Do not apply core degeneration resistence"]
+        DGEN33: [1, "Apply 33 ohm core degeneration resistence"]
+        DGEN50: [2, "Apply 50 ohm core degeneration resistence"]
+        DGEN100: [3, "Apply 100 ohm core degeneration resistence"]
+
+  CFG:
+    SQBUFSCHTRGANA:
+      _replace_enum:
+        DISABLE: [0, "Squaring buffer schmitt trigger is disabled"]
+        ENABLE: [1, "Squaring buffer schmitt trigger is enabled"]
+
+  STATUS:
+    FSMLOCK:
+      _replace_enum:
+        UNLOCKED: [0, "FSM lock is unlocked"]
+        LOCKED: [1, "FSM lock is locked"]
+    LOCK:
+      _replace_enum:
+        UNLOCKED: [0, "Configuration lock is unlocked"]
+        LOCKED: [1, "Configuration lock is locked"]
+
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [22542, "Unlock code"]
+
+
+HFRCO0_S,HFRCO0_NS:
+  STATUS:
+    LOCK:
+      _replace_enum:
+        UNLOCKED: [0, "HFRCO is unlocked"]
+        LOCKED: [1, "HFRCO is locked"]
+
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [33173, "Unlock code"]
+
+
+MSC_S,MSC_NS:
+  STATUS:
+    REGLOCK:
+      _replace_enum:
+        UNLOCKED: [0, "Register lock is unlocked"]
+        LOCKED: [1, "Register lock is locked"]
+
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [7025, "Unlock code"]
+
+  TESTCTRL:
+    XADRINC:
+      _replace_enum:
+        ONE: [0, "One"]
+        TWO: [1, "Two"]
+
+
+PRS_S,PRS_NS:
+  "SYNC_CH*_CTRL":
+    SIGSEL:
+      _replace_enum:
+        NONE: [0, "No action"]
+
+
+GPIO_S,GPIO_NS:
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [42292, "Unlock code"]
+
+  GPIOLOCKSTATUS:
+    LOCK:
+      _replace_enum:
+        UNLOCKED: [0, "Registers are unlocked"]
+        LOCKED: [1, "Registers are locked"]
+
+
+SMU_S,SMU_NS:
+  STATUS:
+    SMULOCK:
+      _replace_enum:
+        UNLOCKED: [0, "SMULOCK is unlocked"]
+        LOCKED: [1, "SMULOCK is locked"]
+
+  LOCK:
+    _modify:
+      SMULOCKKEY:
+        description: "Write anything but UNLOCK to lock registers."
+          
+
+HFRCOEM23_S,HFRCOEM23_NS:
+  STATUS:
+    LOCK:
+      _replace_enum:
+        UNLOCKED: [0, "Registers are unlocked"]
+        LOCKED: [1, "Registers are locked"]
+
+  LOCK:
+    LOCKKEY:
+      _replace_enum:
+        UNLOCK: [33173, "Unlock code"]
+
+
+
+_include:
+  - common_patches/prs_async_ctrl.yaml
+  - common_patches/crc_ctrl.yaml
+  - common_patches/modem_prsctrl.yaml
+  - common_patches/rac.yaml
+  - common_patches/devinfo.yaml

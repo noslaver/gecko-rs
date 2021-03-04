@@ -1,0 +1,33 @@
+_svd: ../svd/efr32xg22.svd
+
+_modify:
+  name: efr32xg22
+
+RFSENSE_S,RFSENSE_NS:
+  CALCFG:
+    PTATCALSTEPS:
+      _replace_enum:
+        STEPS2: [0, "2dB steps"]
+        STEPS4: [1, "4dB steps"]
+        STEPS6: [2, "6dB steps"]
+        STEPS8: [3, "8dB steps"]
+    CMCALSTEPS:
+      _replace_enum:
+        STEPS2: [0, "2dB steps"]
+        STEPS4: [1, "4dB steps"]
+        STEPS6: [2, "6dB steps"]
+        STEPS8: [3, "8dB steps"]
+
+
+FRC_S,FRC_NS:
+  STATUS:
+    _delete:
+      - FSMSTATE
+
+
+_include:
+  - common_patches/prs_async_ctrl.yaml
+  - common_patches/crc_ctrl.yaml
+  - common_patches/modem_prsctrl.yaml
+  - common_patches/rac.yaml
+  - common_patches/devinfo.yaml
